@@ -86,30 +86,22 @@
                 <img src="Supertuxkart.png" alt="Supertuxkart Logo" width="200">
                 <h3>Supertuxkart</h3>
                 <p class="price">Precio: 5.000$</p>
-                <button class="view-button" data-game="Supertuxkart">Ver Juego</button>
+                <a href="https://josemanuelpa24.github.io/ChikiGameZone/Pages/Games/Supertuxkart/index.html" class="iagree-button">Ver Juego</a>
             </div>
             <div class="game-discount">
                 <img src="Warzone2100.png" alt="Warzone2100 Logo" width="200">
                 <h3>Warzone2100</h3>
                 <p class="price">Precio: 4.500$</p>
-                <button class="view-button" data-game="Warzone2100">Ver Juego</button>
+                <a href="https://tusitio.com/warzone2100" class="iagree-button">Ver Juego</a>
             </div>
             <div class="game-discount">
                 <img src="SauerbratenCube 2.png" alt="Sauerbraten Logo" width="200">
                 <h3>Sauerbraten (Cube 2)</h3>
                 <p class="price">Precio: 6.000$</p>
-                <button class="view-button" data-game="SauerbratenCube2">Ver Juego</button>
+                <a href="https://josemanuelpa24.github.io/ChikiGameZone/Pages/Games/SauerbratenCube2/Index.html" class="iagree-button">Ver Juego</a>
             </div>
         </div>
-        <a href="https://josemanuelpa24.github.io/ChikiGameZone/Pages/GeneralPage/Gamelist.html" class="iagree-button">Volver a la Página de Inicio</a>
+        <a href="../StarterPage/StarterPage.html" class="iagree-button">Volver a la Página de Inicio</a>
     </div>
-    <script>
-        document.querySelectorAll('.view-button').forEach(button => {
-            button.addEventListener('click', () => {
-                const gameName = button.getAttribute('data-game');
-                window.location.href = `../Games/${gameName}/index.html`;
-            });
-        });
-    </script>
 </body>
 </html>
