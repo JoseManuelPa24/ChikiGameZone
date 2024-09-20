@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Asegura que la página usa la codificación UTF-8 -->
+    <title>ChikiPlay Zone</title>
+    <!-- Enlace al favicon -->
+    <link rel="icon" href="ChikiGameZoneIco.png" type="image/png">
+    <style>
+        /* Estilos existentes */
+        body {
+            background-color: #121212; /* Fondo gris oscuro */
+            color: #00FFFF; /* Color del texto principal */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Altura mínima de la pantalla */
+        }
+        .container {
+            background-color: #1E1E1E; /* Fondo ligeramente más claro */
+            padding: 20px;
+            max-width: 800px; /* Ancho máximo del contenedor */
+            width: 100%; /* Ancho del contenedor ajustable */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra alrededor del contenedor */
+            text-align: center;
+        }
+        h1 {
+            color: #39FF14; /* Color del título */
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 20px; /* Tamaño de fuente para h1 */
+            margin-bottom: 10px; /* Espacio debajo del título */
+        }
+        .logo {
+            margin-bottom: 20px; /* Espacio debajo del logo */
+            border-radius: 15%; /* Bordes circulares */
+            width: 100px; /* Ancho fijo para la imagen */
+            height: 100px; /* Altura fija para la imagen */
+            object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor circular */
+        }
+        h2 {
+            color: #FFFFFF; /* Color del texto secundario */
+            font-size: 15px; /* Tamaño de fuente para h2 */
+            font-family: 'Verdana', sans-serif; /* Fuente para h2 */
+            margin-bottom: 20px; /* Espacio debajo de los subtítulos */
+        }
+        p {
+            color: #CCCCCC; /* Color del texto adicional */
+            font-size: 14px; /* Tamaño de fuente para párrafos */
+            margin-bottom: 20px; /* Espacio debajo de los párrafos */
+        }
+        .iagree-button {
+            display: inline-block;
+            background-color: #FF00FF; /* Color de fondo del botón */
+            color: #FFFFFF; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado dentro del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            border-radius: 5px; /* Bordes redondeados del botón */
+            transition: background-color 0.3s; /* Transición suave para el cambio de color */
+            margin-top: 20px; /* Espacio encima del botón */
+        }
+        .iagree-button:hover {
+            background-color: #FF1493; /* Color del botón al pasar el ratón */
+        }
+        .policy-button {
+            display: inline-block;
+            background-color: #00FFFF; /* Color de fondo del nuevo botón */
+            color: #000000; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado dentro del botón */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            border-radius: 5px; /* Bordes redondeados del botón */
+            transition: background-color 0.3s; /* Transición suave para el cambio de color */
+            margin-top: 10px; /* Espacio encima del botón */
+            margin-bottom: 20px; /* Espacio debajo del botón */
+        }
+        .policy-button:hover {
+            background-color: #00CED1; /* Color del botón al pasar el ratón */
+        }
+
+        /* Media Queries para ajustar el diseño en diferentes tamaños de pantalla */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 15px;
+                max-width: 90%; /* Ancho máximo reducido */
+            }
+            h1 {
+                font-size: 18px;
+            }
+            h2 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                max-width: 95%; /* Ancho máximo aún más reducido */
+            }
+            h1 {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 12px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .iagree-button {
+                padding: 8px 16px;
+            }
+            .policy-button {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 10px;
+            }
+            p {
+                font-size: 10px;
+            }
+            .iagree-button {
+                padding: 6px 12px;
+            }
+            .policy-button {
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenidos a La tienda de ChikiPlay Zone</h1>
+        <!-- Imagen añadida aquí -->
+        <img src="ChikiGameZoneIco.png" alt="ChikiPlay Zone Logo" class="logo">
+        <h2>Encuentra tus juegos favoritos a un gran precio para tu bolsillo</h2>
+        <p>Consigue los últimos juegos en tendencia dentro de nuestro catálogo de videojuegos que tenemos autorizados para vender. Si deseas apoyar a su creador original, hazlo desde su propia página. Acá nos llevamos el 70% de cada compra para poder comprar más licencias de videojuegos y ampliar nuestro catálogo para tu bolsillo. El creador del videojuego o empresa se llevará el 30%. Si le deseas apoyar, hazlo desde su propia página.</p>
+        <p>Al cliquear aquí, consiento dar el 70% de mi dinero hacia "ChikiPlay Zone" y darle el 30% a su creador, además consiento el uso.</p>
+        <a href="../StarterPage/StarterPage.html" class="iagree-button">Consiento Los Términos y Servicios de Nuestra Política</a>
+        <!-- Nuevo botón añadido aquí -->
+        <a href="../PolicityPage/Policity.html" class="policy-button">Leer Los Términos y Servicios de Nuestra Política</a>
+    </div>
+</body>
+</html>
